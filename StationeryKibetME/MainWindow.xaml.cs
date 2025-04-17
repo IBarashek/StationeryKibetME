@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using StationeryKibetME.Pages;
 
 namespace StationeryKibetME
 {
@@ -23,6 +24,7 @@ namespace StationeryKibetME
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.NavigationService.Navigate(new OrdersPage());
         }
     }
 }

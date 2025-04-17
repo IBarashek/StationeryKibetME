@@ -1,0 +1,43 @@
+﻿<Window x:Class="StationeryKibetME.Windows.OrderInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StationeryKibetME.Windows"
+        mc:Ignorable="d"
+        Title="OrderInfoPage" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Номер закааза:"/>
+                <TextBlock x:Name="TxbId"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Товар:"/>
+                <TextBlock x:Name="TxbProduct"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Продавец:"/>
+                <TextBlock x:Name="TxbSeller"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Количество товара:"/>
+                <TextBlock x:Name="TxbCount"/>
+                <TextBlock Text="шт."/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Итоговая сумма:"/>
+                <TextBlock x:Name="TxbPrice"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Дата:"/>
+                <TextBlock x:Name="TxbDate"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="BtnBack" Content="Назад" Click="GoBack_Click"/>
+                <Button x:Name="BtnЗкште" Content="Печать" Click="Print_Click"/>
+            </StackPanel>
+        </StackPanel>
+       
+    </Grid>
+</Window>
